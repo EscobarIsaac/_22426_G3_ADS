@@ -3,3 +3,4 @@
 Integrantes:
 Escobar Isaac
 Mortensen Eduardo
+Ponce Diego
