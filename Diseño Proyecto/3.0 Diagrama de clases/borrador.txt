@@ -1,0 +1,28 @@
+                  +-------------------+
+                  |     Usuario       |
+                  +-------------------+
+                  | - id              |
+                  | - nombre          |
+                  | - correo          |
+                  | - contraseña      |
+                  | - rol             |
+                  +-------------------+
+                  | + iniciarSesion() |
+                  | + cerrarSesion()  |
+                  +--------^----------+
+                           |
+        ---------------------------------------------
+        |             |             |              |
++--------------+ +-------------+ +------------+ +-----------+
+| Administrador| |   Docente   | | Estudiante | |   Tutor   |
+| - porcentaje | | - materia   | | - curso    | | - relación|
+|              | |             | | - califs[] | |           |
+| + config...  | | + regNotas()| | + verNotas|| | + verHijo |
++--------------+ +-------------+ +------------+ +-----------+
+
+           Estudiante ◼── Calificación
+                       | - valor
+                       | - tipo
+
+         Docente ────> Lección
+         Docente ────> Examen
